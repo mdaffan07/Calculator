@@ -4,7 +4,7 @@ This is a sleek, modern calculator web application built with HTML, CSS, and Jav
 
 ## 📸 Preview
 
-*(A screenshot of the final calculator, showing its dark theme, orange operator buttons, and grid layout)*
+![Calculator](calculator.png)
 
 ## ✨ Features
 
