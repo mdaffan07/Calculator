@@ -13,5 +13,5 @@ function deleteValue(){
 }
 
 function calculate(){
-    display.value = eval(display.value);
+    display.value = Number(eval(display.value).toFixed(3));
 }
