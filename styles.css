@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better layout control */
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(3, 18, 41), rgb(2, 12, 28));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.calculator {
+    width: 400px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    background: #1e1e1e;
+    padding: 15px;
+    /* Removed properties that should be on the input */
+}
+
+/* --- THIS IS THE MAIN FIX --- */
+.display input {
+    width: 100%;
+    border: none;
+    background: transparent; /* Removes white background */
+    outline: none; /* Removes focus outline */
+    color: orange;
+    font-size: 2.5rem;
+    text-align: right;
+    font-family: monospace;
+    padding: 10px 0; /* Added some vertical padding */
+}
+/* ----------------------------- */
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: #333;
+}
+
+.btn {
+    background: #2e2e2e;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.2s; /* Added subtle transition */
+}
+
+.btn:hover {
+    background: #555; /* Changed default hover */
+}
+
+/* --- ADDED FOR BETTER DESIGN --- */
+.special {
+    background: #444;
+}
+.special:hover {
+    background: #666;
+}
+
+.operator {
+    background: #ff9800; /* Orange background for operators */
+    color: #1e1e1e; /* Dark text for contrast */
+    font-weight: bold;
+}
+.operator:hover {
+    background: #f5b700;
+}
+
+.delete:hover {
+    background: red;
+}
